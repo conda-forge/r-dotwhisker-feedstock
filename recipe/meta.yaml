@@ -25,21 +25,23 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-broom
+    - r-broomextra
     - r-dplyr
     - r-ggplot2 >=2.2.1
     - r-ggstance
     - r-gtable
+    - r-margins
     - r-purrr
     - r-rlang
     - r-stringr
   run:
     - r-base
-    - r-broom
+    - r-broomextra
     - r-dplyr
     - r-ggplot2 >=2.2.1
     - r-ggstance
     - r-gtable
+    - r-margins
     - r-purrr
     - r-rlang
     - r-stringr
