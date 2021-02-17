@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=dotwhisker
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dotwhisker-feedstock/blob/master/LICENSE.txt)
 
 Summary: Quick and easy dot-and-whisker plots of regression results.
-
-
 
 Current build status
 ====================
