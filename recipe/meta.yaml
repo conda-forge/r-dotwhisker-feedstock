@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dotwhisker_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dotwhisker/dotwhisker_{{ version }}.tar.gz
-  sha256: 7999b59223cd1e74ff97160817852f5c2a823613ebe5c88fa0b2c954d8dc970c
+  sha256: e5396f6c67eb87ad058dd4a9dadada1056df3ba544b946fd13082841d5f147a5
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -25,21 +25,23 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-broom
+    - r-broomextra
     - r-dplyr
     - r-ggplot2 >=2.2.1
     - r-ggstance
     - r-gtable
+    - r-margins
     - r-purrr
     - r-rlang
     - r-stringr
   run:
     - r-base
-    - r-broom
+    - r-broomextra
     - r-dplyr
     - r-ggplot2 >=2.2.1
     - r-ggstance
     - r-gtable
+    - r-margins
     - r-purrr
     - r-rlang
     - r-stringr
@@ -55,7 +57,7 @@ about:
   summary: Quick and easy dot-and-whisker plots of regression results.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
