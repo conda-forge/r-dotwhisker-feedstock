@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dotwhisker_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dotwhisker/dotwhisker_{{ version }}.tar.gz
-  sha256: e5396f6c67eb87ad058dd4a9dadada1056df3ba544b946fd13082841d5f147a5
+  sha256: ae1dcd80753507e72b803f6aa4038a6b4a376923ef7b8a7ee4e7d909585f2ed5
 
 build:
   merge_build_host: true  # [win]
