@@ -1,4 +1,4 @@
-{% set version = "0.7.4" %}
+{% set version = "0.8.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dotwhisker_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dotwhisker/dotwhisker_{{ version }}.tar.gz
-  sha256: cb04c91f2d9dab454c4a66094545b95430e33dadd399bee5764a6e94566f982b
+  sha256: 8fadb4d2b6a6a80920ad8b4ec319c0f2d3fac6ad42d25b6804b078c3052b3ec3
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
