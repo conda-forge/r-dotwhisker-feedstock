@@ -23,25 +23,30 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-broomextra
     - r-dplyr
     - r-ggplot2 >=2.2.1
     - r-ggstance
+    - r-gridextra
     - r-gtable
-    - r-margins
+    - r-parameters
+    - r-patchwork
+    - r-performance
     - r-purrr
     - r-rlang
     - r-stringr
   run:
     - r-base
-    - r-broomextra
     - r-dplyr
     - r-ggplot2 >=2.2.1
     - r-ggstance
+    - r-gridextra
     - r-gtable
-    - r-margins
+    - r-parameters
+    - r-patchwork
+    - r-performance
     - r-purrr
     - r-rlang
     - r-stringr
