@@ -1,6 +1,5 @@
 {% set version = "0.8.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-dotwhisker
@@ -13,8 +12,7 @@ source:
   sha256: 8fadb4d2b6a6a80920ad8b4ec319c0f2d3fac6ad42d25b6804b078c3052b3ec3
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
