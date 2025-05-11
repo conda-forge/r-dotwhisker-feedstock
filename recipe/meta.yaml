@@ -29,6 +29,7 @@ requirements:
     - r-ggstance
     - r-gridextra
     - r-gtable
+    - r-marginaleffects
     - r-parameters
     - r-patchwork
     - r-performance
@@ -42,6 +43,7 @@ requirements:
     - r-ggstance
     - r-gridextra
     - r-gtable
+    - r-marginaleffects
     - r-parameters
     - r-patchwork
     - r-performance
