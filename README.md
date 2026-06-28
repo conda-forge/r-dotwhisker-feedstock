@@ -3,11 +3,11 @@ About r-dotwhisker-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dotwhisker-feedstock/blob/main/LICENSE.txt)
 
-Home: https://CRAN.R-project.org/package=dotwhisker
+Home: https://fsolt.org/dotwhisker/
 
 Package license: MIT
 
-Summary: Quick and easy dot-and-whisker plots of regression results.
+Summary: Create quick and easy dot-and-whisker plots of regression results. It takes as input either (1) a coefficient table in standard form or (2) one (or a list of) fitted model objects (of any type that has methods implemented in the 'parameters' package). It returns 'ggplot' objects that can be further customized using tools from the 'ggplot2' package. The package also includes helper functions for tasks such as rescaling coefficients or relabeling predictor variables. See more methodological discussion of the visualization and data management methods used in this package in Kastellec and Leoni (2007) <doi:10.1017/S1537592707072209> and Gelman (2008) <doi:10.1002/sim.3107>.
 
 Current build status
 ====================
